@@ -1,0 +1,6 @@
+pyttsx3==2.98
+sentence-transformers==3.4.1
+torch==2.3.0
+torchaudio==2.3.0
+llama-cpp-python==0.2.73
+pydub==0.25.1
