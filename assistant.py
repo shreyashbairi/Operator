@@ -72,6 +72,8 @@ def transcribe_audio():
     
     try:
         # Convert audio to 16kHz, mono, 16-bit PCM
+
+        #blah blah git check
         sound = AudioSegment.from_file("command.wav")
         sound = (sound.set_frame_rate(16000)
                       .set_channels(1)
