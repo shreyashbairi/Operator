@@ -142,22 +142,24 @@ def main_loop():
     Repeatedly record, transcribe, process with LLM, and execute until user quits.
     """
     while True:
-        user_input = input("\nPress Enter to record a command (or type 'q' to quit): ").strip().lower()
-        if user_input == 'q':
+        choice = input("Type 'v' for voice, 't' for text, or 'q' to quit: ").strip().lower()
+        if choice == 'q':
             print("Exiting...")
             break
+        elif choice == 'v':
+            record_voice()
+            text_command = transcribe_audio()
+            print("Transcription:", text_command)
+        elif choice == 't':
+            text_command = input("Enter your command: ").strip()
+            print("Text input:", text_command)
+        else:
+            print("Invalid choice. Try again.")
+            continue
         
-        # 1. Record from microphone
-        record_voice()
-        
-        # 2. Transcribe the audio
-        text_command = transcribe_audio()
-        print("Transcription:", text_command)
-        
-        # 3. Convert to JSON command
         json_output = process_command(text_command)
             
-            # 4. Execute
+        # 4. Execute
         if json_output:
             execute_action(json_output)
 

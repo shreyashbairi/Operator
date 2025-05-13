@@ -10,6 +10,7 @@
 import os
 import json
 import subprocess
+import shutil
 
 # ------------------------------------------------------------------------------
 # 1. Dynamically load scripts from the 'scripts' folder
@@ -17,6 +18,7 @@ import subprocess
 # ------------------------------------------------------------------------------
 
 SCRIPTS_DIR = os.path.join(os.path.dirname(__file__), "scripts")
+ACTION_HISTORY = []
 
 def load_scripts():
     """
@@ -41,6 +43,10 @@ ACTION_SCRIPTS = load_scripts()
 # ------------------------------------------------------------------------------
 # 2. Execute a script by name + pass in the params as argv
 # ------------------------------------------------------------------------------
+
+def test_script(action, params):
+    print(f"Testing script: {action} with params: {params}")
+    return execute_script(action, params)
 
 def execute_script(action, params):
     """
@@ -100,3 +106,17 @@ def execute_action(json_str):
         print(f"Error in execute_action: {str(e)}")
 
     return False
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description='Test scripts directly')
+    parser.add_argument('--action', required=True, help='Action name')
+    parser.add_argument('--params', type=json.loads, required=True, 
+                       help='JSON parameters string')
+    args = parser.parse_args()
+
+    result = execute_script(args.action, args.params)
+    print(f"Execution {'succeeded' if result else 'failed'}")
+
+    # to run script directly, use:
+    #python3 executor.py --action copy_file --params '{"path": "~/Desktop/test.txt"}'
