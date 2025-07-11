@@ -1,0 +1,40 @@
+{"prompt": "delete test.rtf", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Desktop/test.rtf\"}}"}
+{"prompt": "delete test.rtf from documents", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Documents/test.rtf\"}}"}
+{"prompt": "delete test.rtf from downloads", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Downloads/test.rtf\"}}"}
+{"prompt": "delete test.rtf from desktop", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Desktop/test.rtf\"}}"}
+{"prompt": "remove test.rtf", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/test.rtf\"}}"}
+{"prompt": "remove test.rtf from documents", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Documents/test.rtf\"}}"}
+{"prompt": "remove test.rtf from downloads", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Downloads/test.rtf\"}}"}
+{"prompt": "delete test.rtf from desktop", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Desktop/test.rtf\"}}"}
+{"prompt": "move test.rtf to documents", "completion": "{\"action\": \"move_file\", \"params\": {\"source\": \"~/Desktop/test.rtf\", \"destination\": \"~/Documents\"}}"}
+{"prompt": "move test.rtf", "completion": "{\"action\": \"move_file\", \"params\": {\"source\": \"~/Desktop/test.rtf\", \"destination\": \"ASK_USER\"}}"}
+{"prompt": "move test.rtf to downloads", "completion": "{\"action\": \"move_file\", \"params\": {\"source\": \"~/Desktop/test.rtf\", \"destination\": \"~/Downloads\"}}"}
+{"prompt": "move test.rtf to desktop", "completion": "{\"action\": \"move_file\", \"params\": {\"source\": \"~/Documents/test.rtf\", \"destination\": \"~/Desktop\"}}"}
+{"prompt": "move test.rtf to the desktop", "completion": "{\"action\": \"move_file\", \"params\": {\"source\": \"~/Documents/test.rtf\", \"destination\": \"~/Desktop\"}}"}
+{"prompt": "remove test.rtf from documents", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Documents/test.rtf\"}}"}
+{"prompt": "remove test.rtf from downloads", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Downloads/test.rtf\"}}"}
+{"prompt": "remove test.rtf from desktop", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Desktop/test.rtf\"}}"}
+{"prompt": "show me the list of running applications", "completion": "{\"action\": \"list_processes\", \"params\": {}}"}
+{"prompt": "what apps are running now", "completion": "{\"action\": \"list_processes\", \"params\": {}}"}
+{"prompt": "list all running applications", "completion": "{\"action\": \"list_processes\", \"params\": {}}"}
+{"prompt": "show me the list of all running applications", "completion": "{\"action\": \"list_processes\", \"params\": {}}"}
+{"prompt": "show me the list of all processes", "completion": "{\"action\": \"list_processes\", \"params\": {}}"}
+{"prompt": "show me the list of all processes running now", "completion": "{\"action\": \"list_processes\", \"params\": {}}"}
+{"prompt": "delete test.rtf", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Desktop/test.rtf\"}}"}
+{"prompt": "delete test.rtf from documents", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Documents/test.rtf\"}}"}
+{"prompt": "delete test.rtf from downloads", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Downloads/test.rtf\"}}"}
+{"prompt": "move test.rtf to documents", "completion": "{\"action\": \"move_file\", \"params\": {\"source\": \"~/Desktop/test.rtf\", \"destination\": \"~/Documents\"}}"}
+{"prompt": "move test.rtf", "completion": "{\"action\": \"move_file\", \"params\": {\"source\": \"~/Desktop/test.rtf\", \"destination\": \"ASK_USER\"}}"}
+{"prompt": "please lock my device", "completion": "{\"action\": \"lock_system\", \"params\": {}}"}
+{"prompt": "sleep", "completion": "{\"action\": \"sleep\", \"params\": {}}"}
+{"prompt": "lock my system", "completion": "{\"action\": \"lock_system\", \"params\": {}}"}
+{"prompt": "lock the system", "completion": "{\"action\": \"lock_system\", \"params\": {}}"}
+{"prompt": "list running processes", "completion": "{\"action\": \"list_processes\", \"params\": {}}"}
+{"prompt": "lock system", "completion": "{\"action\": \"lock_system\", \"params\": {}}"}
+{"prompt": "copy test.rtf on desktop", "completion": "{\"action\": \"copy_file\", \"params\": {\"source\": \"~/Documents/test.rtf\", \"destination\": \"~/Desktop\"}}"}
+{"prompt": "make a copy of desktop/test.rtf in Documents", "completion": "{\"action\": \"copy_file\", \"params\": {\"source\": \"~/Desktop/test.rtf\", \"destination\": \"~/Documents\"}}"}
+{"prompt": "make a copy of Desktop/test.rtf and paste it on desktop", "completion": "{\"action\": \"copy_file\", \"params\": {\"source\": \"~/Desktop/test.rtf\", \"destination\": \"~/Desktop\"}}"}
+{"prompt": "delete test.rdf1.com.", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/test.rdf1.com\"}}"}
+{"prompt": "kill notes", "completion": "{\"action\": \"kill_process\", \"params\": {\"target\": \"Notes\"}}"}
+{"prompt": "remove test.txt from desktop", "completion": "{\"action\": \"remove_file\", \"params\": {\"source\": \"~/Desktop/test.txt\"}}"}
+{"prompt": "remove test.txt from desltop", "completion": "{\"action\": \"delete_file\", \"params\": {\"path\": \"~/Desktop/test.txt\"}}"}
